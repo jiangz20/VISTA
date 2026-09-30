@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verl"
+version = "0.3.1.dev0"
+description = "VISTA: collective visual experience distillation on verl"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "licenses/Apache-2.0.txt"}
+dependencies = [
+  "torch>=2.7,<2.9", "accelerate", "codetiming", "datasets", "dill",
+  "hydra-core", "numpy", "pandas", "peft>=0.17,<0.19", "Pillow>=10",
+  "pyarrow>=19", "pylatexenc", "ray[default]>=2.41,<=2.50",
+  "torchdata>=0.11", "tensordict>=0.8,<=0.10,!=0.9.0",
+  "transformers>=4.57.1,<=4.57.3", "packaging", "qwen-vl-utils==0.0.14", "fastapi", "uvicorn", "pydantic>=2",
+]
+
+[project.optional-dependencies]
+train = ["vllm==0.11.0", "flash-attn", "liger-kernel"]
+dev = ["pytest>=8", "ruff", "build"]
+
+[tool.setuptools.packages.find]
+include = ["verl*", "vista*", "agent_system*"]
+
+[tool.setuptools.package-data]
+verl = ["version/version", "trainer/config/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+[tool.ruff.lint]
+select = ["F821", "F822", "F823"]

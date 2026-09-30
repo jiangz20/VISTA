@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+message: If you use VISTA, please cite the associated paper.
+title: 'VISTA: Internalizing Collective Visual Experience via On-Policy Distillation
+  for Active Multimodal Agents'
+type: software
+authors:
+- family-names: Jiang
+  given-names: Zheng
+  affiliation: Tsinghua University
+- family-names: Qian
+  given-names: Houde
+  affiliation: Tsinghua University
+- family-names: Chen
+  given-names: Yiming
+  affiliation: Tsinghua University
+- family-names: Li
+  given-names: Ling
+  affiliation: Tsinghua University
+- family-names: Li
+  given-names: Chaoyang
+  affiliation: Tsinghua University
+- family-names: Li
+  given-names: Yueqi
+  affiliation: Tsinghua University
+- family-names: Liu
+  given-names: Yuxuan
+  affiliation: Tsinghua University
+- family-names: Sun
+  given-names: Lifeng
+  affiliation: Tsinghua University
+repository-code: https://github.com/jiangz20/VISTA
+url: https://arxiv.org/abs/2609.38086
+preferred-citation:
+  type: article
+  title: 'VISTA: Internalizing Collective Visual Experience via On-Policy Distillation
+    for Active Multimodal Agents'
+  authors:
+  - family-names: Jiang
+    given-names: Zheng
+  - family-names: Qian
+    given-names: Houde
+  - family-names: Chen
+    given-names: Yiming
+  - family-names: Li
+    given-names: Ling
+  - family-names: Li
+    given-names: Chaoyang
+  - family-names: Li
+    given-names: Yueqi
+  - family-names: Liu
+    given-names: Yuxuan
+  - family-names: Sun
+    given-names: Lifeng
+  journal: arXiv
+  year: 2026
+  date-published: '2026-09-29'
+  url: https://arxiv.org/abs/2609.38086
+  identifiers:
+  - type: other
+    value: arXiv:2609.38086

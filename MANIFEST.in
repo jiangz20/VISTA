@@ -1,0 +1,10 @@
+include LICENSE NOTICE
+recursive-include licenses *
+recursive-include verl *.yaml
+include verl/version/version
+recursive-include scripts *.py *.sh
+recursive-include tests *.py
+
+recursive-include docs *.md
+include CITATION.cff
+recursive-include docs/assets *.png
